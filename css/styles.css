@@ -68,16 +68,14 @@ body {
 .btn-title {
   background-color: var(--color-hover-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.btn-title:hover,
-.btn-title:focus {
-  color: #188ce8;
-}
-.btn-title-name {
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
+}
+.btn-title:hover,
+.btn-title:focus {
+  color: #188ce8;
 }
 .benefits-title {
   font-size: 14px;
@@ -148,6 +146,10 @@ body {
 .secondary {
   font-weight: 500;
   line-height: 1.62;
+}
+.secondary:hover,
+.secondary:focus {
+  color: var(--color-hover-focus);
 }
 .product {
   background-color: var(--second-text-color);
