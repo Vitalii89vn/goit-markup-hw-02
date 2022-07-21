@@ -1,44 +1,53 @@
-body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  color: #212121;
-  background-color: #f5f5f5;
-  letter-spacing: 0.03em;
-}
-.list {
-  list-style: none;
-}
 :root {
+  --main-text-color: #212121;
   --text-color: #757575;
+  --main-background-color: #f5f5f5;
   --second-text-color: #ffffff;
   --background-color-footer: #2f303a;
   --color-hover-focus: #2196f3;
   --btn-background-color: #f5f4fa;
+  --btn-color-hover: #188ce8;
+  --border-color: #eeeeee;
 }
-[type="button"] {
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+}
+.list {
+  list-style: none;
+}
+
+[type='button'] {
   cursor: pointer;
 }
 .page-header {
-  background-color: #ffffff;
+  background-color: var(--main-background-color);
 }
 .logo {
   font-weight: 700;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   color: #000000;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
-.logo-web,
-.selected {
+.logo-web {
   color: var(--color-hover-focus);
 }
 .main-nav,
 .contacts-header {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--main-text-color);
+}
+.selected {
+  color: var(--color-hover-focus);
 }
 .main-nav:hover,
 .main-nav:focus,
@@ -53,6 +62,7 @@ body {
   background-color: var(--background-color-footer);
 }
 .title {
+  font-family: inherit;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -67,21 +77,21 @@ body {
 }
 .btn-title {
   background-color: var(--color-hover-focus);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
 }
 .btn-title:hover,
 .btn-title:focus {
-  color: #188ce8;
+  background-color: var(--btn-color-hover);
 }
 .benefits-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  font-style: normal;
+  letter-spacing: 0.03em;
 }
 .benefits-description {
   color: var(--text-color);
@@ -92,15 +102,19 @@ body {
 .our-comand-title {
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 .our-comand {
-  background-color: #f5f4fa;
+  background-color: var(--btn-background-color);
 }
 .our-comand-worker {
-  background-color: #fff;
+  background-color: var(--second-text-color);
 }
 .our-comand-worker-name {
+  font-size: 16px;
+  line-height: 1.19;
   font-weight: 500;
+  letter-spacing: 0.03em;
 }
 .our-comand-worker-name,
 .our-comand-worker-profession {
@@ -108,18 +122,21 @@ body {
 }
 .our-comand-worker-profession {
   color: var(--text-color);
+  font-size: 16px;
 }
 .page-footer {
   background-color: var(--background-color-footer);
 }
-.logo-studio {
+.logo-footer {
   color: var(--second-text-color);
 }
+.logo-web {
+  color: var(--color-hover-focus);
+}
+
 .address-footer,
 .contacts-footer {
-  font-style: normal;
   text-decoration: none;
-  font-size: 14px;
   line-height: 1.71px;
 }
 
@@ -133,36 +150,31 @@ body {
 .contacts-footer:hover {
   color: var(--color-hover-focus);
 }
-.btn.primary {
-  background-color: var(--color-hover-focus);
-  color: var(--second-text-color);
+.btn-product {
+  background-color: var(--btn-background-color);
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.62;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.btn.secondary {
-  background-color: var(--btn-background-color);
-}
-.primary,
-.secondary {
-  font-weight: 500;
-  line-height: 1.62;
-}
-.secondary:hover,
-.secondary:focus {
-  color: var(--color-hover-focus);
+.btn-product:hover,
+.btn-product:focus {
+  background-color: var(--color-hover-focus);
+  color: var(--second-text-color);
 }
 .product {
   background-color: var(--second-text-color);
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-color);
 }
 .product-title {
-  font-style: normal;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .product-title-descr {
+  font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
 }
